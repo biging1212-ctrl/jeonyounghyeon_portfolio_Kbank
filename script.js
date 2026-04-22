@@ -53,7 +53,7 @@
 })();
 
 // ── Config ──
-const TOTAL_PAGES = 50; // pages 2–51 (page 52 = closing HTML)
+const TOTAL_PAGES = 49; // pages 2–50 (page 51 = closing HTML)
 const STORAGE_KEY = 'portfolio_slots';
 
 // ── Load saved slots from localStorage ──
@@ -82,7 +82,7 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
   // page number badge
   const numBadge = document.createElement('span');
   numBadge.className   = 'slot-num';
-  numBadge.textContent = `${String(pageNum).padStart(2, '0')} / 52`;
+  numBadge.textContent = `${String(pageNum).padStart(2, '0')} / 51`;
   slot.appendChild(numBadge);
 
   // upload zone
